@@ -1,57 +1,5 @@
-import logo from './logo.svg';
-import react_logo from './react-logo.png';
 import './App.css';
-
-// const page = (
-//   <div>
-//       <img src={react_logo} className="App-logo" alt="logo" />
-//       <h1>Fun facts about React</h1>
-//       <ul>
-//           <li>Was first released in 2013</li>
-//           <li>Was originally created by Jordan Walke</li>
-//           <li>Has well over 100K stars on GitHub</li>
-//           <li>Is maintained by Facebook</li>
-//           <li>Powers thousands of enterprise apps, including mobile apps</li>
-//       </ul>
-//   </div>
-// )
-
-// function App() {
-//   return (
-//     <div className="App">
-//       {page}
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-function Header() {
-  return (
-      <header className="header">
-          <nav className="nav">
-              <img src={react_logo} className="nav-logo" />
-              <ul className="nav-items">
-                  <li>Pricing</li>
-                  <li>About</li>
-                  <li>Contact</li>
-              </ul>
-          </nav>
-      </header>
-  )
-}
+import Header from './components/Header'
 
 function Footer() {
   return (
@@ -75,7 +23,7 @@ function MainContent() {
   )
 }
 
-function App() {
+export default function App() {
   return (
     <div>
       <Header />
@@ -84,5 +32,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
