@@ -1,27 +1,7 @@
 import './App.css';
 import Header from './components/Header'
-
-function Footer() {
-  return (
-      <footer className='footer'>
-          <small>© 2023 William Step</small>
-      </footer>
-  )
-}
-
-function MainContent() {
-  return (
-      <div>
-          <h1>Reasons I'm excited to learn React</h1>
-          <ol>
-              <li>It's a popular library, so I'll be 
-              able to fit in with the cool kids!</li>
-              <li>I'm more likely to get a job as a developer
-              if I know React</li>
-          </ol>
-      </div>
-  )
-}
+import Footer from './components/Footer'
+import MainContent from './components/MainContent'
 
 export default function App() {
   return (
