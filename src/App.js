@@ -1,9 +1,10 @@
 import logo from './logo.svg';
+import react_logo from './react-logo.png';
 import './App.css';
 
 const page = (
   <div>
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src={react_logo} className="App-logo" alt="logo" />
       <h1>Fun facts about React</h1>
       <ul>
           <li>Was first released in 2013</li>
