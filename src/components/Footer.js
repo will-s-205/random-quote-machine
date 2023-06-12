@@ -5,3 +5,4 @@ export default function Footer() {
         </footer>
     )
 }
+{/* <div class="footer">by <a href="https://codepen.io/hezag/">hezag</a></div> */}

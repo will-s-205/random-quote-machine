@@ -5,7 +5,7 @@ import MainContent from './components/MainContent'
 
 export default function App() {
   return (
-    <div>
+    <div id="quote-box">
       <Header />
       <MainContent />
       <Footer />
