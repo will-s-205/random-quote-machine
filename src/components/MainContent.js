@@ -1,9 +1,9 @@
 export default function MainContent() {
     return (
         <div>
-            <div id="text">no</div>
-            <div id="author">no</div>
-            <div id="new-quote">no</div>
+            <div id="text"></div>
+            <div id="author"></div>
+            <div id="new-quote"></div>
             {/* ELEMENTS BELOW SHOULD BE CLICKABLE */}
             {/* <div id="tweet-quote"></div> */}
             {/* <div id="text"></div> */}
