@@ -1,4 +1,4 @@
-See the project live here: https://will-s-205.github.io/random-quote-machine/
+See project live: https://will-s-205.github.io/random-quote-machine/
 
 Random Quote Machine shows random, meaningful quotes and its authors. Every new quote changes the theme.
 
