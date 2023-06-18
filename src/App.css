@@ -2,6 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  
 }
 
 .App {
@@ -18,4 +19,7 @@ body {
   background-color: rgb(255, 163, 50);
   width: 100px;
   height: 100px;
+
+  /* align-items: center; */
+  /* justify-content: center; */
 }
