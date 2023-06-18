@@ -4,7 +4,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.App {
+#App {
   max-width: 100vw;
   min-height: 100vh;
   display: flex;

@@ -1,6 +1,14 @@
 import double_quotes from '../images/double-quotes-svgrepo-com.svg'
+import colorVariations from '../data/colorVariations';
 
 export default function QuoteBox() {
+
+    const setColor = () => {
+        const randomColor = Math.floor(Math.random() * colorVariations.length);
+        console.log(colorVariations[randomColor].title)
+        return document.getElementById("App").style.backgroundColor = colorVariations[randomColor].color
+    }
+
     return (
         <div>
             <div id="quote-box">
@@ -14,7 +22,7 @@ export default function QuoteBox() {
                     </a>
                     <button>FCC</button>
                     <button>Git</button>
-                    <button id="new-quote">Q</button>
+                    <button id="new-quote" onClick={setColor}>newQuote</button>
                 </div>
             </div>
         </div>
