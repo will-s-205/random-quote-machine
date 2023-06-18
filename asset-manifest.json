@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/random-quote-machine/static/css/main.073c9b0a.css",
-    "main.js": "/random-quote-machine/static/js/main.a183d325.js",
-    "static/js/787.e4ae0a49.chunk.js": "/random-quote-machine/static/js/787.e4ae0a49.chunk.js",
-    "static/media/logo.svg": "/random-quote-machine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/random-quote-machine/static/css/main.39e85f3f.css",
+    "main.js": "/random-quote-machine/static/js/main.a9713a88.js",
     "index.html": "/random-quote-machine/index.html",
-    "main.073c9b0a.css.map": "/random-quote-machine/static/css/main.073c9b0a.css.map",
-    "main.a183d325.js.map": "/random-quote-machine/static/js/main.a183d325.js.map",
-    "787.e4ae0a49.chunk.js.map": "/random-quote-machine/static/js/787.e4ae0a49.chunk.js.map"
+    "static/media/double-quotes-svgrepo-com.svg": "/random-quote-machine/static/media/double-quotes-svgrepo-com.56083e4ec554966cfd9f44996fdeb81a.svg",
+    "main.39e85f3f.css.map": "/random-quote-machine/static/css/main.39e85f3f.css.map",
+    "main.a9713a88.js.map": "/random-quote-machine/static/js/main.a9713a88.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.a183d325.js"
+    "static/css/main.39e85f3f.css",
+    "static/js/main.a9713a88.js"
   ]
 }
