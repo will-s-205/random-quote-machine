@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: bisque;
+  transition: background-color 0.5s;
 }
 
 #quote-box {
