@@ -5,8 +5,8 @@ export default function QuoteBox() {
 
     const setColor = () => {
         const randomColor = Math.floor(Math.random() * colorVariations.length);
-        console.log(colorVariations[randomColor].title)
-        return document.getElementById("App").style.backgroundColor = colorVariations[randomColor].color
+        // console.log(colorVariations[randomColor].title)
+        return console.log(document.getElementById("App").style.backgroundColor = colorVariations[randomColor].title)
     }
 
     return (
@@ -22,7 +22,9 @@ export default function QuoteBox() {
                     </a>
                     <button>FCC</button>
                     <button>Git</button>
+                    <form>
                     <button id="new-quote" onClick={setColor}>newQuote</button>
+                    </form>
                 </div>
             </div>
         </div>
