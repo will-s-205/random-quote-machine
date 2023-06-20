@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/random-quote-machine/static/css/main.39e85f3f.css",
-    "main.js": "/random-quote-machine/static/js/main.a9713a88.js",
+    "main.css": "/random-quote-machine/static/css/main.ebe2df92.css",
+    "main.js": "/random-quote-machine/static/js/main.f001866d.js",
     "index.html": "/random-quote-machine/index.html",
     "static/media/double-quotes-svgrepo-com.svg": "/random-quote-machine/static/media/double-quotes-svgrepo-com.56083e4ec554966cfd9f44996fdeb81a.svg",
-    "main.39e85f3f.css.map": "/random-quote-machine/static/css/main.39e85f3f.css.map",
-    "main.a9713a88.js.map": "/random-quote-machine/static/js/main.a9713a88.js.map"
+    "main.ebe2df92.css.map": "/random-quote-machine/static/css/main.ebe2df92.css.map",
+    "main.f001866d.js.map": "/random-quote-machine/static/js/main.f001866d.js.map"
   },
   "entrypoints": [
-    "static/css/main.39e85f3f.css",
-    "static/js/main.a9713a88.js"
+    "static/css/main.ebe2df92.css",
+    "static/js/main.f001866d.js"
   ]
 }
