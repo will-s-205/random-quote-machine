@@ -12,7 +12,7 @@ export default function QuoteBox({onNewQuoteClick}) {
 
 
 
-    function getQuote() {
+    function getQuoteFromProject() {
         const quotes = quotesList.quotes;
         const randomNum = Math.floor(Math.random() * quotes.length);
         const randomQuote = quotes[randomNum];
@@ -39,8 +39,7 @@ export default function QuoteBox({onNewQuoteClick}) {
             })
             .catch((error) => {
                 console.log(error);
-                setAuthorName("Maciek");
-                setQuotedText("Something went wrong and we couldn't load the quote, please try again :)");
+                getQuoteFromProject()
             });
     };
 
