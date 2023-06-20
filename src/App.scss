@@ -18,19 +18,22 @@ body {
   transition: background-color 0.5s;
 }
 
-#quote-box {
+.quote-box {
   display: flex;
   flex-direction: column;
-  background-color: rgb(255, 163, 50);
+  background-color: #ffffffaa;
+  border-radius: 5px;
+  border: 0;
   width: 250px;
   height: 100%;
   padding: 10px;
   box-shadow: 0 5rem 5rem rgba(0, 0, 0, .5);
+
   /* OR */
   /* box-shadow: 15px 15px 15px rgba(0,0,0,.5); */
 }
 
-#text {
+.text {
   text-align: center;
 }
 
@@ -38,10 +41,15 @@ body {
   width: 1rem;
 }
 
-#author {
+.author {
   text-align: end;
 }
 
-#new-quote {
+.new-quote {
   float: right;
+}
+
+button {
+  background-color: #ffffff38;
+  border: 1px;
 }
