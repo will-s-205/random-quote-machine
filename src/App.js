@@ -15,7 +15,7 @@ export default function App() {
   }
 
   return (
-    <div id="App" style={{ background: themeColor }}>
+    <div id="App" style={{ background: themeColor, color: themeColor }}>
       <QuoteBox onNewQuoteClick={changeThemeColor} />
     </div>
   );
