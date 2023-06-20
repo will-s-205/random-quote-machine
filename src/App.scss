@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--main);
-  border-radius: 5px;
+  border-radius: 60px;
   border: 0;
   max-width: 550px;
   height: 100%;
@@ -111,5 +111,8 @@ a{
   .new-quote {
     width: 65px;
     padding: 6px
+  }
+  #quote-box{
+    margin: 0 10px 0 10px;
   }
 }
