@@ -11,14 +11,12 @@ export default function App() {
     let { color } = colorVariations[randomNum];
 
     setThemeColor(color);
-    console.log("App color is "+colorVariations[randomNum].title)
+    console.log("App color is " + colorVariations[randomNum].title)
   }
 
   return (
-    <div id="App" style={{background:themeColor}}>
-      {/* <QuoteBox /> */}
-      {/* <QuoteBox handleNewQuoteButtonClick={changeThemeColor}/> */}
-      <QuoteBox onNewQuoteClick={changeThemeColor}/>
+    <div id="App" style={{ background: themeColor }}>
+      <QuoteBox onNewQuoteClick={changeThemeColor} />
     </div>
   );
 }

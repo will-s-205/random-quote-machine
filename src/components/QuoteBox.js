@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// import colorVariations from '../data/colorVariations';
 import double_quotes from '../images/double-quotes-svgrepo-com.svg'
-import colorVariations from '../data/colorVariations';
 import quotesList from '../data/quotes.json'
 
 const url =
