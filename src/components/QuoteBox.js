@@ -6,11 +6,9 @@ import quotesList from '../data/quotes.json'
 const url =
     'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
 
-export default function QuoteBox({onNewQuoteClick}) {
+export default function QuoteBox({ onNewQuoteClick }) {
     const [quotedText, setQuotedText] = useState('');
     const [authorName, setAuthorName] = useState('');
-
-
 
     function getQuoteFromProject() {
         const quotes = quotesList.quotes;
@@ -44,19 +42,18 @@ export default function QuoteBox({onNewQuoteClick}) {
     };
 
     const handleNewQuoteClick = () => {
-        // Change theme and fetch new quote
+        // Fetch a new quote
         onNewQuoteClick();
         fetchRandomQuote();
     }
 
-    // JS way to change background-color on click
-    const setColor = () => {
-        const randomColor = Math.floor(Math.random() * colorVariations.length);
-        console.log(colorVariations[randomColor].title)
-        return document.getElementById("App").style.backgroundColor = colorVariations[randomColor].color
-    }
+    // Old good JS way to change background-color on click
+    // const setColor = () => {
+    //     const randomColor = Math.floor(Math.random() * colorVariations.length);
+    //     console.log(colorVariations[randomColor].title)
+    //     return document.getElementById("App").style.backgroundColor = colorVariations[randomColor].color
+    // }
     // {/* <button id="new-quote" onClick={setColor}>newQuote</button> */}
-
 
     return (
         <div>
