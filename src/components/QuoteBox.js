@@ -62,15 +62,15 @@ export default function QuoteBox({ onNewQuoteClick }) {
 
     return (
         <div>
-            <div className="quote-box">
+            <div id="quote-box">
 
-                <div className="text">
+                <div id="text">
                     <p><FaQuoteLeft /> {quotedText}</p>
                 </div>
-                <div className="author">- {authorName}</div>
+                <div id="author">- {authorName}</div>
 
                 <div>
-                <a href={twitterLink} target='_blank'>
+                <a id="tweet-quote" href={twitterLink} target='_blank'>
                         <button className="button icon"><FaTwitter /></button>
                     </a>
                     <a href='https://www.freecodecamp.org/rigo205' target='_blank'>
@@ -79,7 +79,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
                     <a href='https://github.com/will-s-205/random-quote-machine' target='_blank'>
                         <button className="button icon"><FaGithub /></button>
                     </a>
-                    <button className="button new-quote" onClick={handleNewQuoteClick}>New quote</button>
+                    <button id="new-quote" className="button new-quote" onClick={handleNewQuoteClick}>New quote</button>
                 </div>
             </div>
         </div>

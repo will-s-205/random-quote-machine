@@ -20,7 +20,7 @@ export default function App() {
   }
 
   return (
-    <div className="App" style={style}>
+    <div id="App" style={style}>
       <QuoteBox onNewQuoteClick={changeThemeColor} />
     </div>
   );
