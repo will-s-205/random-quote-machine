@@ -1,13 +1,13 @@
 import double_quotes from '../images/double-quotes-svgrepo-com.svg'
-import colorVariations from '../data/colorVariations';
+// import colorVariations from '../data/colorVariations';
 
-export default function QuoteBox() {
+export default function QuoteBox(props) {
 
-    const setColor = () => {
-        const randomColor = Math.floor(Math.random() * colorVariations.length);
-        console.log(colorVariations[randomColor].title)
-        return document.getElementById("App").style.backgroundColor = colorVariations[randomColor].color
-    }
+    // const setColor = () => {
+    //     const randomColor = Math.floor(Math.random() * colorVariations.length);
+    //     console.log(colorVariations[randomColor].title)
+    //     return document.getElementById("App").style.backgroundColor = colorVariations[randomColor].color
+    // }
 
     return (
         <div>
@@ -24,7 +24,8 @@ export default function QuoteBox() {
                     </a>
                     <button>FCC</button>
                     <button>Git</button>
-                    <button id="new-quote" onClick={setColor}>newQuote</button>
+                    {/* <button id="new-quote" onClick={setColor}>newQuote</button> */}
+                    <button id="new-quote" onClick={props.handleNewQuoteButtonClick}>newQuote</button>
                 </div>
             </div>
         </div>
