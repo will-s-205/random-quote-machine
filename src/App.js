@@ -4,7 +4,7 @@ import colorVariations from './data/colorVariations';
 import { useState } from 'react';
 
 export default function App() {
-  const [themeColor, setThemeColor] = useState('--backgound');
+  const [themeColor, setThemeColor] = useState(colorVariations[0].color);
 
   const changeThemeColor = () => {
     const randomNum = Math.floor(Math.random() * colorVariations.length);
@@ -14,8 +14,13 @@ export default function App() {
     console.log("App color is " + colorVariations[randomNum].title)
   }
 
+  const style = {
+    '--backgound-color': themeColor,
+    'color': themeColor
+  }
+
   return (
-    <div id="App" style={{ background: themeColor, color: themeColor }}>
+    <div className="App" style={style}>
       <QuoteBox onNewQuoteClick={changeThemeColor} />
     </div>
   );

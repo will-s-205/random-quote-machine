@@ -22,7 +22,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
     // Fetch quote on initial render
     useEffect(() => {
         fetchRandomQuote();
-    }, []);
+    }, [1]);
 
     const fetchRandomQuote = () => {
         fetch(url)
@@ -70,9 +70,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
                     </a>
                     <button>FCC</button>
                     <button>Git</button>
-                    {/* <button className="new-quote" onClick={props.handleNewQuoteButtonClick}>newQuote</button> */}
-                    {/* <button className="new-quote" onClick={getQuote}>newQuote</button> */}
-                    <button className="new-quote" onClick={handleNewQuoteClick}>newQuote</button>
+                    <button className="new-quote" onClick={handleNewQuoteClick}>New quote</button>
                 </div>
             </div>
         </div>
