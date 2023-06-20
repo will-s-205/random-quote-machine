@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import QuoteBox from './components/QuoteBox';
 
 export default function App() {
