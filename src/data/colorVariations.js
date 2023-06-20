@@ -17,7 +17,7 @@ let colorVariations = [
     {
         id: 4,
         title: "Grass green",
-        color: "009432"
+        color: "#009432"
     },
     {
         id: 5,
