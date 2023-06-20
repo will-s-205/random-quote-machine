@@ -57,9 +57,8 @@ export default function QuoteBox({ onNewQuoteClick }) {
     // }
     // {/* <button id="new-quote" onClick={setColor}>newQuote</button> */}
 
-    const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-        `"${quotedText}" - ${authorName}`
-      )}&hashtags=quotes`;
+    const twitterLink = `https://twitter.com/intent/tweet?text=${`"${quotedText}" - ${authorName}`
+      }&hashtags=quotes`;
 
     return (
         <div>
