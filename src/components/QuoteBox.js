@@ -2,7 +2,6 @@ import '../App.scss';
 import React, { useState, useEffect } from 'react';
 import { FaFreeCodeCamp, FaGithub, FaTwitter, FaQuoteLeft } from 'react-icons/fa';
 // import colorVariations from '../data/colorVariations';
-import double_quotes from '../images/double-quotes-svgrepo-com.svg'
 import quotesList from '../data/quotes.json'
 
 const url =
@@ -24,7 +23,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
     // Fetch quote on initial render
     useEffect(() => {
         fetchRandomQuote();
-    }, [1]);
+    }, []);
 
     const fetchRandomQuote = () => {
         fetch(url)
@@ -58,7 +57,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
     // {/* <button id="new-quote" onClick={setColor}>newQuote</button> */}
 
     const twitterLink = `https://twitter.com/intent/tweet?text=${`"${quotedText}" - ${authorName}`
-      }&hashtags=quotes`;
+        }&hashtags=quotes`;
 
     return (
         <div>
@@ -70,18 +69,19 @@ export default function QuoteBox({ onNewQuoteClick }) {
                 <div id="author">- {authorName}</div>
 
                 <div>
-                <a id="tweet-quote" href={twitterLink} target='_blank'>
+                    <a id="tweet-quote" href={twitterLink} target='_blank' rel="noreferrer">
                         <button className="button icon"><FaTwitter /></button>
                     </a>
-                    <a href='https://www.freecodecamp.org/rigo205' target='_blank'>
+                    <a href='https://www.freecodecamp.org/rigo205' target='_blank' rel="noreferrer">
                         <button className="button icon"><FaFreeCodeCamp /></button>
                     </a>
-                    <a href='https://github.com/will-s-205/random-quote-machine' target='_blank'>
+                    <a href='https://github.com/will-s-205' target='_blank' rel="noreferrer">
                         <button className="button icon"><FaGithub /></button>
                     </a>
                     <button id="new-quote" className="button new-quote" onClick={handleNewQuoteClick}>New quote</button>
                 </div>
             </div>
+            <small className="footer"><a href="https://github.com/will-s-205/random-quote-machine" target='_blank'>by William Step</a></small>
         </div>
     )
 }

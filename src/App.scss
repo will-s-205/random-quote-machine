@@ -1,5 +1,6 @@
 :root {
   --backgound-color: #ffe4c4;
+  --main: #ffffffaa;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 #quote-box {
   display: flex;
   flex-direction: column;
-  background-color: #ffffffaa;
+  background-color: var(--main);
   border-radius: 5px;
   border: 0;
   max-width: 550px;
@@ -58,7 +59,14 @@ body {
   font-size: 1.2em;
   font-weight: bold;
   background-color: var(--backgound-color);
-  color: #ffffffaa;
+  color: var(--main);
+
+}
+
+.button:hover{
+  transform: translateY(-0.2rem);
+  background-color: #000000dd;
+  transition: all .8s;
 }
 
 .icon {
@@ -70,6 +78,22 @@ body {
 button>svg {
   margin-bottom: -7px; // for some reason svg getting
   margin-right: 1px;
+}
+
+.footer {
+  display: flex;
+  padding-top: 15px;
+  font-weight: 100px;
+  color: var(--main);
+  font-weight: bold;
+justify-content: center;
+text-decoration: none;
+cursor: pointer;
+a{
+  text-decoration: none;
+  color: var(--main);
+  font-weight: bold;
+}
 }
 
 @media (max-width: 410px) {
