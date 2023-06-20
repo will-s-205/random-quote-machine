@@ -57,6 +57,10 @@ export default function QuoteBox({ onNewQuoteClick }) {
     // }
     // {/* <button id="new-quote" onClick={setColor}>newQuote</button> */}
 
+    const twitterLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        `"${quotedText}" - ${authorName}`
+      )}&hashtags=quotes`;
+
     return (
         <div>
             <div className="quote-box">
@@ -67,7 +71,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
                 <div className="author">- {authorName}</div>
 
                 <div>
-                <a href='https://twitter.com/WilliamStep4' target='_blank'>
+                <a href={twitterLink} target='_blank'>
                         <button className="button icon"><FaTwitter /></button>
                     </a>
                     <a href='https://www.freecodecamp.org/rigo205' target='_blank'>

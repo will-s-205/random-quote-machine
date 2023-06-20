@@ -6,6 +6,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
+  @media (max-width: 410px) {
+    font-size: 50%;
+  }
 }
 
 .App {
@@ -36,12 +40,6 @@ body {
   font-weight: bold;
 }
 
-// .double-quotes {
-//   width: 2rem;
-//   transform: rotate(180deg);
-//   padding-left: 5px;
-// }
-
 .author {
   text-align: end;
   font-size: 1.2em;
@@ -53,23 +51,41 @@ body {
 }
 
 .button {
-  border: 0;
-  border-radius: 20px;
   margin: 50px 2px 0px 2px;
   padding: 20px;
+  border: 0;
+  border-radius: 35px;
   font-size: 1.2em;
   font-weight: bold;
   background-color: var(--backgound-color);
   color: #ffffffaa;
 }
 
-.icon{
+.icon {
   padding: 10px;
   font-size: 2.3em;
-  width: 70px;
+  width: 65px;
 }
 
-button>svg{
-  // for some reason svg getting extra margin
-  margin-bottom: -6px; 
+button>svg {
+  margin-bottom: -7px; // for some reason svg getting
+  margin-right: 1px;
+}
+
+@media (max-width: 410px) {
+  .button{
+    padding: 0px;
+    width: 35px;
+    margin: 20px 4px -10px 4px;
+  }
+ 
+  button>svg {
+    margin-bottom: -3px; // for some reason svg getting
+    margin-left: 1px; // for some reason svg getting
+  }
+
+  .new-quote {
+    width: 65px;
+    padding: 6px
+  }
 }

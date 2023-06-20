@@ -1,8 +1,8 @@
 let colorVariations = [
     {
         id: 1,
-        title: "Sunflower yellow",
-        color: "#FFC312"
+        title: "Berry",
+        color: "#ED4C67"
     },
     {
         id: 2,
