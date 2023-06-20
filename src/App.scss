@@ -1,6 +1,5 @@
 :root {
   --backgound-color: #ffe4c4;
-
 }
 
 body {
@@ -37,12 +36,11 @@ body {
   font-weight: bold;
 }
 
-.double-quotes {
-  width: 2rem;
-  transform: rotate(180deg);
-  padding-left: 5px;
-  // filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-}
+// .double-quotes {
+//   width: 2rem;
+//   transform: rotate(180deg);
+//   padding-left: 5px;
+// }
 
 .author {
   text-align: end;
@@ -54,15 +52,24 @@ body {
   float: right;
 }
 
-button {
-  // background-color: #ffffff00;
-  // border: 1px solid #00000039;
+.button {
   border: 0;
-  border-radius: 30px;
+  border-radius: 20px;
   margin: 50px 2px 0px 2px;
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   background-color: var(--backgound-color);
   color: #ffffffaa;
+}
+
+.icon{
+  padding: 10px;
+  font-size: 2.3em;
+  width: 70px;
+}
+
+button>svg{
+  // for some reason svg getting extra margin
+  margin-bottom: -6px; 
 }

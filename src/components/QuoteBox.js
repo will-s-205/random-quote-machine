@@ -1,4 +1,6 @@
+import '../App.scss';
 import React, { useState, useEffect } from 'react';
+import { FaFreeCodeCamp, FaGithub, FaTwitter, FaQuoteLeft } from 'react-icons/fa';
 // import colorVariations from '../data/colorVariations';
 import double_quotes from '../images/double-quotes-svgrepo-com.svg'
 import quotesList from '../data/quotes.json'
@@ -60,17 +62,21 @@ export default function QuoteBox({ onNewQuoteClick }) {
             <div className="quote-box">
 
                 <div className="text">
-                    <p><img src={double_quotes} className='double-quotes' alt="double quotes svg"></img> {quotedText}</p>
+                    <p><FaQuoteLeft /> {quotedText}</p>
                 </div>
                 <div className="author">- {authorName}</div>
 
                 <div>
-                    <a href="twitter.com/intent/tweet" id="tweet-quote">
-                        <button >Twi</button>
+                <a href='https://twitter.com/WilliamStep4' target='_blank'>
+                        <button className="button icon"><FaTwitter /></button>
                     </a>
-                    <button>FCC</button>
-                    <button>Git</button>
-                    <button className="new-quote" onClick={handleNewQuoteClick}>New quote</button>
+                    <a href='https://www.freecodecamp.org/rigo205' target='_blank'>
+                        <button className="button icon"><FaFreeCodeCamp /></button>
+                    </a>
+                    <a href='https://github.com/will-s-205/random-quote-machine' target='_blank'>
+                        <button className="button icon"><FaGithub /></button>
+                    </a>
+                    <button className="button new-quote" onClick={handleNewQuoteClick}>New quote</button>
                 </div>
             </div>
         </div>
