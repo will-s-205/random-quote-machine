@@ -81,7 +81,7 @@ export default function QuoteBox({ onNewQuoteClick }) {
                     <button id="new-quote" className="button new-quote" onClick={handleNewQuoteClick}>New quote</button>
                 </div>
             </div>
-            <small className="footer"><a href="https://github.com/will-s-205/random-quote-machine" target='_blank'>by William Step</a></small>
+            <small className="footer"><a href="https://github.com/will-s-205/random-quote-machine" target='_blank' rel="noreferrer">by William Step</a></small>
         </div>
     )
 }
