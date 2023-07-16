@@ -72,12 +72,12 @@ export default function QuoteBox({ onNewQuoteClick }) {
                     <a id="tweet-quote" href={twitterLink} target='_blank' rel="noreferrer">
                         <button className="button icon"><FaTwitter /></button>
                     </a>
-                    <a href='https://www.freecodecamp.org/rigo205' target='_blank' rel="noreferrer">
+                    {/* <a href='https://www.freecodecamp.org/rigo205' target='_blank' rel="noreferrer">
                         <button className="button icon"><FaFreeCodeCamp /></button>
                     </a>
                     <a href='https://github.com/will-s-205' target='_blank' rel="noreferrer">
                         <button className="button icon"><FaGithub /></button>
-                    </a>
+                    </a> */}
                     <button id="new-quote" className="button new-quote" onClick={handleNewQuoteClick}>New quote</button>
                 </div>
             </div>
